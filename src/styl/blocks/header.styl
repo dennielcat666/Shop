@@ -1,0 +1,188 @@
+.header
+	background-image url(../img/bg-header.png)
+	background-repeat no-repeat
+	background-size cover
+	padding-top 38px
+	padding-bottom 152px
+	color black-color
+	border-bottom 5px solid rgba(0 0 0 0.4)
+	@media tablet
+		border-bottom none
+
+.layout
+	padding 0px 20px
+	max-width 1040px
+	margin 0 auto
+
+.top-menu
+	display flex
+	justify-content space-between
+	@media tablet
+		flex-wrap wrap
+		justify-content center
+
+	&__logo
+		width 50%
+		@media tablet
+			text-align center
+
+	&__menu
+		display flex
+		align-items center
+		padding-top 16px
+		@media mobile
+			flex-wrap wrap
+			justify-content center
+			align-items flex-start
+	
+	&__box
+		position relative
+		@media mobile
+			position static
+
+	&__menu-link
+		display inline-block
+		padding 10px 15px
+		text-transform uppercase
+		font-family Montserrat
+		font-weight 700
+		color black-color
+		font-size 18px
+		&:hover
+			background-color pink-color
+			color #fff
+			border-radius 5px
+.sub-menu
+	position absolute
+	top 38px
+	left 0px
+	font-family Montserrat
+	font-weight 500
+	font-size 16px
+	display none
+	background-color rgba(0 0 0 0.2)
+	padding 0px 10px 5px 9px
+	border-radius 5px
+	@media mobile
+		position static
+		padding 1px 10px 5px 9px
+
+	&--last
+		padding 0px 50px 5px 9px
+		@media mobile
+			padding 1px 50px 5px 9px
+
+	&__item
+		list-style none
+		margin-top 10px
+		border-bottom 2px solid transparent
+		&:hover
+			border-bottom 2px solid pink-color
+
+.banner
+	display flex
+	margin-top 156px
+	position relative
+	margin-bottom 0px
+	@media tablet
+		margin-top 120px
+
+	&__box
+		max-width 535px
+		@media tablet
+			margin 0 auto
+
+	&__name
+		text-transform uppercase
+		font-size 90px
+		font-family Montserrat
+		font-weight 700
+		line-height 81px
+		@media tablet
+			text-align center
+			font-size 80px
+		@media mobile
+			font-size 65px
+		@media small
+			font-size 45px
+			line-height 55px
+
+	&__text
+		margin-top 29px
+		font-family PTSerif
+		font-weight 400
+		font-size 20px
+		line-height 28px
+		@media tablet
+			text-align center
+		@media mobile
+			margin-top 10px
+
+.color-pink
+	color pink-color
+
+.request-form
+	position absolute
+	top 0
+	right 25px
+	background-color pink-color
+	border-radius 5px
+	margin-top -7px
+	padding 28px 20px
+	max-width 400px
+	width 100%
+	@media tablet
+		max-width 340px
+		top 100%
+		left 50%
+		transform translateX(-50%)
+		margin-top 30px
+
+	&__name
+		text-transform uppercase
+		font-family Montserrat
+		font-weight 500
+		font-size 22px
+		color #fff
+		text-align center
+
+.form
+	display flex
+	flex-direction column
+	margin-top 36px
+
+	&__name
+		padding 17px
+		font-size 20px
+		&:not(:last-of-type)
+			margin-bottom 17px
+
+	&__label
+		color #fff
+		font-size 20px
+		font-family PTSerif
+		font-weight 400
+		margin-top 26px
+		margin-left 2px
+		line-height 0px
+		@media tablet
+			font-size 18px
+			line-height 25px
+
+	&__checkbox
+		width 19px
+		height 19px
+		border-radius 3px
+		margin-right 23px
+
+	&__btn
+		color #fff
+		padding 19px 0px
+		background-color #000
+		text-transform uppercase
+		font-size 20px
+		font-family Montserrat
+		font-weight 500
+		margin-top 22px
+		
+

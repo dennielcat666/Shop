@@ -1,0 +1,60 @@
+.services_block
+	padding-top 35px
+	padding-bottom 61px
+	@media tablet
+		margin-top 405px
+
+	&__title
+		text-transform uppercase
+		font-family Couture
+		font-size 50px
+		font-weight 700
+		margin-bottom 50px
+		@media tablet
+			text-align center
+		@media small
+			font-size 40px
+
+	&__card
+		display flex
+		margin-top 93px
+		@media tablet
+			max-width 500px
+			flex-wrap wrap
+			text-align center
+			margin 0 auto
+		@media mobile
+			max-width none
+
+	&__card-wrap
+		max-width 175px
+		width 100%
+		text-align center
+		&:not(:first-child)
+			margin-left 118px
+		@media tablet
+			&:nth-child(3)
+				margin-left 0
+			&:nth-child(n+3)
+				margin-top 30px
+		@media mobile
+			max-width none
+			flex 0 1 100%
+			&:not(:first-child)
+				margin-left 0
+				margin-top 30px
+			
+.card
+	&__img
+		height 155px
+		width 170px
+		background-repeat no-repeat
+		background-position center
+		@media mobile
+			margin 0 auto
+
+	&__text
+		margin-top 36px
+		font-family PTSerif
+		font-size 19px
+		font-weight 400
