@@ -18,19 +18,32 @@
 		display inline-block
 
 .search
+	background-color #fff
 	display flex
+	border-radius 32px
+	padding 14px 30px 14px 30px
+
+	&__form
+		display flex
+		align-items center
+
 	&__btn
 		background-image url(../img/search.png)
 		background-color #fff
 		background-repeat no-repeat
-		width 25px
-		height 26px
+		background-position center
+		width 35px
+		height 36px
+		padding 5px 5px 5px 5px
+		cursor pointer
+
 	&__input
 		font-family OpenSans
 		font-weight 700
 		font-size 18px
 		max-width 95px
-		padding 10px 10px
+		padding 6px 10px
+		margin-right 21px
 		&::-webkit-input-placeholder
 			color black-color
 		&::-moz-placeholder
@@ -40,7 +53,22 @@
 
 .sub-menu
 	display none
+
 	&__item
 		list-style none
+
 	&__limk
 		display inline-block
+
+.select
+	&__name
+		background-color #fff
+		padding 6px 6px 6px 40px
+		border-left 1px solid #e0e0e0
+		font-family OpenSans
+		font-weight 700
+		font-size 18px
+
+.fa-chevron-down
+	color black-color
+	margin-left 15px

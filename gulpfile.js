@@ -12,6 +12,9 @@ gulp.task('dev',  function dev (cb) {
     gulp.src('./src/fonts/*')
         .pipe(gulp.dest('./dev/fonts/'));
 
+    gulp.src('./src/styl/*.css')
+        .pipe(gulp.dest('./dev/css'));
+
     gulp.src('./src/pug/*.pug')
         .pipe(pug({pretty: true}))
         .pipe(gulp.dest('./dev'));
@@ -58,14 +61,15 @@ gulp.task('dist',  function dist (cb) {
         }))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
-    
-    // gulp.src('./src/sass/index.scss')
-    //     .pipe(sass().on('error', sass.logError))
-    //     /* .pipe(concat('main.css')) */
-    //     .pipe(uglifycss())
-    //     .pipe(gulp.dest('./dist/css'));
+
     gulp.src('./src/styl/index.styl')
-        .pipe(stylus())
+        .pipe(stylus({
+            'include css': true
+        }))
+        .pipe(uglifycss())
+        .pipe(gulp.dest('./dist/css'));
+
+    gulp.src('./src/styl/*.css')
         .pipe(uglifycss())
         .pipe(gulp.dest('./dist/css'));
 
