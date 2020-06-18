@@ -18,14 +18,29 @@
 		display inline-block
 
 .search
+	display flex
 	&__btn
-		color black-color
-		font-size 18px
+		background-image url(../img/search.png)
+		background-color #fff
+		background-repeat no-repeat
+		width 25px
+		height 26px
+	&__input
 		font-family OpenSans
 		font-weight 700
-		&::before
-			content ''
-			background-image url(../img/search.png)
-			background-repeat no-repeat
-			width 25px
-			height 26px
+		font-size 18px
+		max-width 95px
+		padding 10px 10px
+		&::-webkit-input-placeholder
+			color black-color
+		&::-moz-placeholder
+			color black-color
+		&::-ms-input-placeholder
+			color black-color
+
+.sub-menu
+	display none
+	&__item
+		list-style none
+	&__limk
+		display inline-block
