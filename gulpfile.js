@@ -1,14 +1,11 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const sass = require('gulp-sass');
 const watch = require('gulp-watch');
 const babel = require('gulp-babel');
 const uglifycss = require('gulp-uglifycss');
 const pug = require('gulp-pug');
 const stylus = require('gulp-stylus');
-
-sass.compiler = require('node-sass');
 
 gulp.task('dev',  function dev (cb) {
 

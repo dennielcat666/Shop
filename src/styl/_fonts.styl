@@ -1,23 +1,22 @@
-// for num in 400 500 700
-// 	@font-face
-// 		font-family Montserrat
-// 		font-style normal
-// 		font-weight num
-// 		src s("url('../fonts/%s%s.woff2')", Montserrat, num) format('woff2'),
-// 		s("url('../fonts/%s%s.woff')", Montserrat, num) format('woff');
+for num in 300
+	@font-face
+		font-family Montserrat
+		font-style normal
+		font-weight num
+		src s("url('../fonts/%s%s.woff2')", Montserrat, num) format('woff2'),
+		s("url('../fonts/%s%s.woff')", Montserrat, num) format('woff');
 
-// for num in 400
-// 	@font-face
-// 		font-family PTSerif
-// 		font-style normal
-// 		font-weight num
-// 		src s("url('../fonts/%s%s.woff2')", PTSerif, num) format('woff2'),
-// 		s("url('../fonts/%s%s.woff')", PTSerif, num) format('woff');
+@font-face
+	font-family FontAwesome
+	font-style normal
+	font-weight 400
+	src s("url('../fonts/%s.woff2')", FontAwesome) format('woff2'),
+	s("url('../fonts/%s.woff')", FontAwesome) format('woff');
 
-// for num in 700
-// 	@font-face
-// 		font-family Couture
-// 		font-style normal
-// 		font-weight num
-// 		src s("url('../fonts/%s%s.woff2')", Couture, num) format('woff2'),
-// 		s("url('../fonts/%s%s.woff')", Couture, num) format('woff');
+for num in 400 600 700
+	@font-face
+		font-family OpenSans
+		font-style normal
+		font-weight num
+		src s("url('../fonts/%s%s.woff2')", OpenSans, num) format('woff2'),
+		s("url('../fonts/%s%s.woff')", OpenSans, num) format('woff');
