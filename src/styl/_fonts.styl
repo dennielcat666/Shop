@@ -20,3 +20,11 @@ for num in 400 600 700
 		font-weight num
 		src s("url('../fonts/%s%s.woff2')", OpenSans, num) format('woff2'),
 		s("url('../fonts/%s%s.woff')", OpenSans, num) format('woff');
+
+for num in 500 700
+	@font-face
+		font-family Roboto
+		font-style normal
+		font-weight num
+		src s("url('../fonts/%s%s.woff2')", Roboto, num) format('woff2'),
+		s("url('../fonts/%s%s.woff')", Roboto, num) format('woff');

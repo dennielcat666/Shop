@@ -4,11 +4,6 @@
 	background-size cover
 	padding-top 80px
 
-.layout
-	padding 0px 20px
-	max-width 1215px
-	margin 0 auto
-
 .top-menu
 	display flex
 	justify-content space-between
@@ -20,7 +15,7 @@
 .search
 	background-color #fff
 	display flex
-	border-radius 32px
+	border-radius 33px
 	padding 14px 30px 14px 30px
 
 	&__form
@@ -44,23 +39,39 @@
 		max-width 95px
 		padding 6px 10px
 		margin-right 21px
+		transition max-width 0.5s
 		&::-webkit-input-placeholder
 			color black-color
 		&::-moz-placeholder
 			color black-color
 		&::-ms-input-placeholder
 			color black-color
+		&:focus
+			max-width 250px
+
 
 .sub-menu
 	display none
+	position absolute
+	top 50px
+	left 0
+	background-color #fff
+	padding 10px 90px 10px 45px
+	border-radius 0 25px 25px 0
 
 	&__item
 		list-style none
 
 	&__limk
 		display inline-block
+		font-family OpenSans
+		font-weight 700
+		font-size 15px
 
 .select
+	&__containr
+		position relative
+
 	&__name
 		background-color #fff
 		padding 6px 6px 6px 40px
@@ -69,6 +80,43 @@
 		font-weight 700
 		font-size 18px
 
-.fa-chevron-down
-	color black-color
-	margin-left 15px
+.banner
+	padding-top 180px
+	padding-bottom 255px
+	display flex
+	flex-direction column
+	align-items flex-end
+
+	&__name
+		font-family Roboto
+		font-weight 700
+		font-size 115px
+		line-height 120px
+
+		&--span
+			color #fff
+
+	&__info
+		font-family Roboto
+		font-weight 500
+		font-size 50px
+		color #fff
+		line-height 100px
+		margin-left 10px
+
+		&--span
+			color #fbf934
+			margin-left 0
+	
+	&__link
+		display inline-block
+		padding 18px 51px 18px 51px
+		margin-top 67px
+		background-color #fff
+		font-family OpenSans
+		font-weight 600
+		font-size 20px
+		margin-left 6px
+		border-radius 33px
+
+

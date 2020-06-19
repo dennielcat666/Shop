@@ -1,3 +1,50 @@
 extends extends/_layout
 
 block content
+	.trend.layout.layout--big
+		.trend__title Trendy Arrivals
+		.trend__block
+			.trend__box
+				-
+					cards = [
+						['616', '211', './img/trend_img-1.png', 'Black Genuine Leather Bags', '$ 23.20'],
+						['522', '389', './img/trend_img-2.png', 'Fashion Red Leather Bags', '$ 20.16'],
+						['485', '282', './img/trend_img-3.png', 'Fashion Genuine Leather Bags', '$ 30.14']
+					]
+				each item in cards
+					.trend__card-wrap
+						.trend__top-line
+							.trend__icon-info
+								img.trend__icon-like(src="./img/trend_like.png", alt="")
+								.trend__info=item[0]
+							.trend__icon-info
+								img.trend__icon-comm(src="./img/trend_comm.png", alt="")
+								.trend__info=item[1]
+						.trend__wrap
+								.trend__img(style="background-image: url("+ item[2] + ")")
+								.trend__name=item[3]
+								.trend__price=item[4]
+						form.trend__form(action="")
+								button.trend__btn Add to Cart
+			.trend__box
+				-
+					cards = [
+						['447', '102', './img/trend_img-4.png', 'Simply Leather Bags', '$ 15.20'],
+						['253', '120', './img/trend_img-5.png', 'New Fashion Leather Bags', '$ 25.20'],
+						['241', '203', './img/trend_img-6.png', 'Single Hand Models Bags', '$ 17.60']
+					]
+				each item in cards
+					.trend__card-wrap
+						.trend__top-line
+							.trend__icon-info
+								img.trend__icon-like(src="./img/trend_like.png", alt="")
+								.trend__info=item[0]
+							.trend__icon-info
+								img.trend__icon-comm(src="./img/trend_comm.png", alt="")
+								.trend__info=item[1]
+						.trend__wrap
+								.trend__img(style="background-image: url("+ item[2] + ")")
+								.trend__name=item[3]
+								.trend__price=item[4]
+						form.trend__form(action="")
+								button.trend__btn Add to Cart

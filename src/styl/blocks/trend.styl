@@ -1,0 +1,105 @@
+.trend
+	background-color #fff
+	padding-top 81px
+	margin-top -35px
+	font-family OpenSans
+
+	&__title
+		font-weight 700
+		font-size 50px
+		color light-black
+		text-align center
+	
+	&__box
+		display flex
+		justify-content space-around
+		padding 0px 0px 0px 0px
+
+		&:first-child
+			margin-top 90px
+		
+		&:last-child
+			margin-top 43px
+
+	&__card-wrap
+		max-width 350px
+		width 100%
+		position relative
+		padding 21px 18px 66px 18px
+	
+	&__top-line
+		display flex
+		justify-content space-between
+	
+	&__icon-info
+		display flex
+
+	&__icon-like
+		display none
+	
+	&__icon-comm
+		display none
+
+	&__info
+		color #bbbbbb
+		font-weight 400
+		font-size 15px
+		display none
+
+	&__wrap
+		text-align center
+		font-weight 400
+		margin-top 18px
+
+	&__img
+		width 236px
+		height 262px
+		background-repeat no-repeat
+		background-position center
+		margin 0 auto
+
+	&__name
+		font-size 18px
+		color #777777
+		margin-top 23px
+
+	&__price
+		font-size 25px
+		color light-black
+
+	&__btn
+		font-weight 600
+		font-size 20px
+		background-image linear-gradient(to top right, #8c84f9, #a165f4)
+		padding 16px 45px
+		border-radius 33px
+		position absolute
+		bottom -32px
+		left 50%
+		transform translateX(-50%)
+		cursor pointer
+		display none
+
+	&__card-wrap:hover
+		box-shadow 0 0 10px rgba(0,0,0,0.5)
+
+		& .trend__icon-like
+			display block
+
+		& .trend__icon-comm
+			display block
+
+		& .trend__info
+			display block
+
+		& .trend__wrap
+			margin-top 0
+
+		& .trend__name
+			color #000
+
+		& .trend__price
+			color #8c84f9
+		
+		& .trend__btn
+			display block
