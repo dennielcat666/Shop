@@ -48,3 +48,59 @@ block content
 								.trend__price=item[4]
 						form.trend__form(action="")
 								button.trend__btn Add to Cart
+
+	.brand.layout
+		.brand__info
+			h2.brand__title Our Brands
+			h3.brand__name Small Shoes 2017 new Arrivals mini <br> Messenger #[span.brand__name.brand__name--span Classic Shoes]
+			.brand__description In porttitor elit ac mi placerat hendrerit. Morbi accumsan, erat in ullamcorper consectetur, nisi erat efficitur eros, sagittis tristique odio turpis vitae dui. Vestibulum gravida est ut erat pretium, non pretium diam feugiat. Integer egestas suscipit lorem ac fermentum. Integer at mauris vitae justo sagittis dapibus. Pellentesque sit amet nisl vitae orci vehicula faucibus. Fusce et lat, feugiat est. 
+		.brand__img(style="background-image: url(./img/phone.png)")
+
+	.showcase.layout.layout--big
+		.showcase__title Our Showcase
+		.showcase__tabs
+			.tabs__link
+				.tabs__link-title Fashion
+				.tabs__link-title Furnitures
+				.tabs__link-title.tabs__link-title--active Watches
+				.tabs__link-title Mobile
+				.tabs__link-title Cloth
+				.tabs__link-title Toys
+			.tabs__block
+				.tabs__block-content
+				.tabs__block-content
+				.tabs__block-content.visible
+					.product-box
+						-
+							cards = [
+								['./img/watch-1.png', 'Fashion Genuine Chain Watch', '$ 25.36'],
+								['./img/watch-2.png', 'Fashion Silver Chain Watch', '$ 35.24'],
+								['./img/watch-3.png', 'Fashion Chain Watch', '$ 23.12']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
+					.product-box
+						-
+							cards = [
+								['./img/watch-4.png', 'Fashion Black Chain Watch', '$ 42.32'],
+								['./img/watch-5.png', 'Fashion Lether  Watch', '$ 15.20'],
+								['./img/watch-6.png', 'Fashion Forign Watch', '$ 36.12']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
+				.tabs__block-content
+				.tabs__block-content
+				.tabs__block-content
+	
+	.newsletter
+		.layout
+			.newsletter__title Newsletter
+			form.newsletter__form(action="")
+				input.newsletter__input(type="email" placeholder="Enter your email address..")
+				button.newsletter__btn Submit

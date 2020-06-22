@@ -28,3 +28,10 @@ for num in 500 700
 		font-weight num
 		src s("url('../fonts/%s%s.woff2')", Roboto, num) format('woff2'),
 		s("url('../fonts/%s%s.woff')", Roboto, num) format('woff');
+
+for num in 600
+	@font-face
+		font-family MyriadPro
+		font-style normal
+		font-weight num
+		src s("url('../fonts/%s%s.woff')", MyriadPro, num) format('woff');

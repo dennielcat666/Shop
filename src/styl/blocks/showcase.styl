@@ -1,0 +1,71 @@
+.showcase
+	position relative
+	z-index 2
+	background-color #fff
+	box-shadow 0 0 30px rgba(0,0,0,0.1)
+	font-family OpenSans
+	padding-top 48px
+	padding-bottom 123px
+	color light-black
+
+	&__title
+		font-weight 700
+		font-size 50px
+		text-align center
+
+.tabs
+	&__link
+		margin 0 auto
+		margin-top 87px
+		padding 23px 90px 23px 139px
+		max-width 1100px
+		display flex
+		justify-content space-between
+		box-shadow 0 0 30px rgba(0,0,0,0.1)
+		border-radius 33px
+		font-weight 600
+		font-size 17px
+
+	&__link-title
+		cursor pointer
+		&--active
+			color #b394fa
+			text-shadow -3px 6px 5px rgba(0,0,0,0.5)
+			font-size 19px
+
+.product-box
+	display flex
+	justify-content space-around
+	padding 0px 32px 0px 50px
+
+	&:first-child
+		margin-top 75px
+
+	&:first-child .product-box__name
+		margin-top 10px
+
+	&:last-child
+		margin-top 90px
+
+	&:last-child .product-box__price
+		margin-top 25px
+
+	&__img
+		width 262px
+		height 284px
+		background-repeat no-repeat
+		background-position center
+		margin 0 auto
+
+	&__name
+		font-size 18px
+		color #777777
+		font-weight 400
+		text-align center
+
+	&__price
+		font-family MyriadPro
+		font-size 25px
+		font-weight 600
+		text-align center
+		margin-top 10px
