@@ -68,7 +68,55 @@ block content
 				.tabs__link-title Toys
 			.tabs__block
 				.tabs__block-content
+					.product-box
+						-
+							cards = [
+								['./img/fashion-1.png', "Women's Beige Cape", '$ 45.16'],
+								['./img/fashion-2.png', "Men's Jacket", '$ 47.24'],
+								['./img/fashion-3.png', "Women's Pants", '$ 43.22']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--fashion(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
+					.product-box
+						-
+							cards = [
+								['./img/fashion-4.png', "Men's Winter Jacket", '$ 42.44'],
+								['./img/fashion-5.png', "Women's Blouse", '$ 39.20'],
+								['./img/fashion-6.png', "Men's Trousers", '$ 46.12']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--fashion(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
 				.tabs__block-content
+					.product-box
+						-
+							cards = [
+								['./img/furnitures-1.png', "Corner Leather Sofa", '$ 1032.76'],
+								['./img/furnitures-2.png', "Coffee Table", '$ 473.54'],
+								['./img/furnitures-3.png', "Dining Chair", '$ 305.15']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--furnitures(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
+					.product-box
+						-
+							cards = [
+								['./img/furnitures-4.png', "Dining Table", '$ 517.81'],
+								['./img/furnitures-5.png', "Floor Lamp", '$ 422.71'],
+								['./img/furnitures-6.png', "TV Wall", '$ 619.38']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--furnitures(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
 				.tabs__block-content.visible
 					.product-box
 						-
@@ -86,7 +134,7 @@ block content
 						-
 							cards = [
 								['./img/watch-4.png', 'Fashion Black Chain Watch', '$ 42.32'],
-								['./img/watch-5.png', 'Fashion Lether  Watch', '$ 15.20'],
+								['./img/watch-5.png', 'Fashion Lether Watch', '$ 15.20'],
 								['./img/watch-6.png', 'Fashion Forign Watch', '$ 36.12']
 							]
 						each item in cards
@@ -95,8 +143,80 @@ block content
 								.product-box__name=item[1]
 								.product-box__price=item[2]
 				.tabs__block-content
+					.product-box
+						-
+							cards = [
+								['./img/mobile-1.png', "Samsung Galaxy Fold", '$ 2034.96'],
+								['./img/mobile-2.png', "Apple iPhone 11 Pro", '$ 1526.22'],
+								['./img/mobile-3.png', "Sony Xperia 1", '$ 1090.15']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--mobile(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
+					.product-box
+						-
+							cards = [
+								['./img/mobile-4.png', "HUAWEI Mate Xs", '$ 2907.08'],
+								['./img/mobile-5.png', "OnePlus 7T Pro", '$ 1264.58'],
+								['./img/mobile-6.png', "XIAOMI Mi 10", '$ 1017.48']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--mobile(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
 				.tabs__block-content
+					.product-box
+						-
+							cards = [
+								['./img/cloth-1.png', "Turquoise Silk Dress", '$ 57.93'],
+								['./img/cloth-2.png', "Blue Denim Shirt", '$ 32.15'],
+								['./img/cloth-3.png', "Raspberry Jumpsuit", '$ 55.08']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--cloth(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
+					.product-box
+						-
+							cards = [
+								['./img/cloth-4.png', "Checkered Shirt", '$ 25.69'],
+								['./img/cloth-5.png', "Leather Jacket", '$ 61.11'],
+								['./img/cloth-6.png', "White Shirt", '$ 30.07']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--cloth(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
 				.tabs__block-content
+					.product-box
+						-
+							cards = [
+								['./img/toys-1.png', "Educational Toy 'Giraffe'", '$ 13.01'],
+								['./img/toys-2.png', "Teddy Bear", '$ 7.81'],
+								['./img/toys-3.png', "Educational Toy 'Jungle'", '$ 12.17']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--toys(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
+					.product-box
+						-
+							cards = [
+								['./img/toys-4.png', "Millennium Falcon", '$ 873.14'],
+								['./img/toys-5.png', "Dream Cabriolet VM-05", '$ 101.87'],
+								['./img/toys-6.png', "Barbie Doll Set", '$ 29.01']
+							]
+						each item in cards
+							.product-box__card-wrap
+								.product-box__img.product-box__img--toys(style="background-image: url("+ item[0] + ")")
+								.product-box__name=item[1]
+								.product-box__price=item[2]
 	
 	.newsletter
 		.layout

@@ -28,10 +28,16 @@
 
 	&__link-title
 		cursor pointer
-		&--active
+		&.tabs__link-title--active
 			color #b394fa
 			text-shadow -3px 6px 5px rgba(0,0,0,0.5)
 			font-size 19px
+
+	&__block-content
+		display none
+
+.visible
+	display block
 
 .product-box
 	display flex
@@ -41,14 +47,11 @@
 	&:first-child
 		margin-top 75px
 
-	&:first-child .product-box__name
-		margin-top 10px
-
 	&:last-child
 		margin-top 90px
 
 	&:last-child .product-box__price
-		margin-top 25px
+		margin-top 15px
 
 	&__img
 		width 262px
@@ -57,11 +60,28 @@
 		background-position center
 		margin 0 auto
 
+		&--fashion
+			background-size contain
+
+		&--furnitures
+			background-size contain
+
+		&--mobile
+			background-size contain
+
+		&--cloth
+			background-size contain
+
+		&--toys
+			background-size contain
+
 	&__name
 		font-size 18px
 		color #777777
 		font-weight 400
 		text-align center
+		margin-top 10px
+		text-transform capitalize
 
 	&__price
 		font-family MyriadPro
