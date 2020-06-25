@@ -5,29 +5,53 @@
 	margin-top -35px
 	font-family OpenSans
 	box-shadow 0 0 30px rgba(0,0,0,0.1)
+	@media mobile
+		padding-top 50px
+	@media small
+		padding-bottom 50px
 
 	&__title
 		font-weight 700
 		font-size 50px
 		color light-black
 		text-align center
+		@media small
+			font-size 36px
+
+	&__block
+		@media tablet
+			display flex
+			margin-top 20px
+		@media mobile
+			flex-direction column
+			align-items center
 	
 	&__box
 		display flex
 		justify-content space-around
 		padding 0px 0px 0px 0px
+		@media tablet
+			flex-direction column
 
 		&:first-child
 			margin-top 90px
-		
+			@media tablet
+				margin-top 0px
+
 		&:last-child
 			margin-top 43px
+			@media tablet
+				margin-top 0px
 
 	&__card-wrap
 		max-width 350px
 		width 100%
 		position relative
 		padding 21px 18px 66px 18px
+		@media tablet
+			max-width 250px
+		@media mobile
+			padding 21px 18px 35px 18px
 	
 	&__top-line
 		display flex
@@ -54,11 +78,14 @@
 		margin-top 18px
 
 	&__img
-		width 236px
+		max-width 236px
+		width 100%
 		height 262px
 		background-repeat no-repeat
 		background-position center
 		margin 0 auto
+		@media tablet
+			background-size contain
 
 	&__name
 		font-size 18px

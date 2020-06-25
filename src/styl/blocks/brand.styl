@@ -3,23 +3,30 @@
 	color light-black
 	display flex
 	justify-content space-between
-	// align-items center
 	padding-top 39px
 	padding-bottom 39px
+	@media mobile
+		flex-direction column
 
 	&__info
 		max-width 540px
 		margin-top 205px
+		@media tablet
+			margin-top 20px
 
 	&__title
 		font-weight 700
 		font-size 50px
 		color light-black
+		@media small
+			font-size 36px
 
 	&__name
 		font-weight 400
 		font-size 25px
 		margin-top 14px
+		@media small
+			font-size 20px
 
 		&--span
 			color #958bf9
@@ -30,6 +37,8 @@
 		font-weight 400
 		margin-top 24px
 		line-height 26px
+		@media small
+			font-size 15px
 		
 	&__img
 		max-width 498px
@@ -37,3 +46,10 @@
 		width 100%
 		background-repeat no-repeat
 		background-size contain
+		@media tablet
+			height 670px
+		@media mobile
+			margin-top 20px
+			height 580px
+		@media small
+			height 435px

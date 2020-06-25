@@ -3,10 +3,15 @@
 	background-repeat no-repeat
 	background-size cover
 	padding-top 80px
+	@media tablet
+		background-position 20%
 
 .top-menu
 	display flex
 	justify-content space-between
+	@media mobile
+		flex-direction column
+		align-items center
 
 .logo
 	&__link
@@ -17,10 +22,20 @@
 	display flex
 	border-radius 33px
 	padding 14px 30px 14px 30px
+	@media tablet
+		flex-direction column
+		background-color transparent
+		padding 0px 0px 0px 0px
+	@media mobile
+		margin-top 20px
 
 	&__form
 		display flex
 		align-items center
+		@media tablet
+			background-color #fff
+			border-radius 33px
+			padding-left 13px
 
 	&__btn
 		background-image url(../img/search.png)
@@ -48,6 +63,8 @@
 			color black-color
 		&:focus
 			max-width 250px
+			@media tablet
+				max-width 200px
 
 
 .sub-menu
@@ -71,6 +88,11 @@
 .select
 	&__containr
 		position relative
+		@media tablet
+			display flex
+			justify-content flex-end
+		@media mobile
+			justify-content center
 
 	&__name
 		background-color #fff
@@ -79,6 +101,13 @@
 		font-family OpenSans
 		font-weight 700
 		font-size 18px
+		@media tablet
+			border-radius 33px
+			margin-top 10px
+			padding 6px 6px 6px 23px
+			max-width 164px
+			width 100%
+
 
 .banner
 	padding-top 180px
@@ -86,15 +115,28 @@
 	display flex
 	flex-direction column
 	align-items flex-end
+	@media tablet
+		padding-top 100px
 
 	&__name
 		font-family Roboto
 		font-weight 700
 		font-size 115px
 		line-height 120px
+		color #000
+		@media tablet
+			color #fff
+		@media mobile
+			font-size 85px
+			line-height 90px
+		@media small
+			font-size 62px
+			line-height 70px
 
 		&--span
 			color #fff
+			@media tablet
+				color #000
 
 	&__info
 		font-family Roboto
@@ -103,10 +145,20 @@
 		color #fff
 		line-height 100px
 		margin-left 10px
+		@media tablet
+			color #000
+			margin-top 60px
+		@media mobile
+			margin-top 25px
+		@media small
+			font-size 40px
+			margin-top 0px
 
 		&--span
 			color #fbf934
 			margin-left 0
+			@media tablet
+				color #fb5d4d
 	
 	&__link
 		display inline-block
@@ -118,5 +170,7 @@
 		font-size 20px
 		margin-left 6px
 		border-radius 33px
+		@media mobile
+			margin-top 10px
 
 
