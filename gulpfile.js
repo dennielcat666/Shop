@@ -7,7 +7,7 @@ const uglifycss = require('gulp-uglifycss');
 const pug = require('gulp-pug');
 const stylus = require('gulp-stylus');
 
-gulp.task('dev',  function dev (cb) {
+gulp.task('dev', function dev (cb) {
 
     gulp.src('./src/fonts/*')
         .pipe(gulp.dest('./dev/fonts/'));
@@ -39,7 +39,7 @@ gulp.task('dev',  function dev (cb) {
 
 
 
-gulp.task('dist',  function dist (cb) {
+gulp.task('dist', function dist (cb) {
 
     gulp.src('./src/pug/*.pug')
         .pipe(pug({pretty: true}))
