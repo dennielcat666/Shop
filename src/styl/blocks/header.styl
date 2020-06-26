@@ -75,9 +75,15 @@
 	background-color #fff
 	padding 10px 90px 10px 45px
 	border-radius 0 25px 25px 0
+	@media tablet
+		top 47px
+		padding 10px 75px 10px 25px
+		border-radius 25px 25px 25px 25px
 
 	&__item
 		list-style none
+		&:not(:first-child)
+			margin-top 10px
 
 	&__limk
 		display inline-block
@@ -116,7 +122,7 @@
 	flex-direction column
 	align-items flex-end
 	@media tablet
-		padding-top 100px
+		padding-top 134px
 
 	&__name
 		font-family Roboto

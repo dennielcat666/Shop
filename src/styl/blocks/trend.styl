@@ -39,9 +39,17 @@
 				margin-top 0px
 
 		&:last-child
-			margin-top 43px
+			margin-top 58px
+
+			& .trend__name
+				margin-top 25px
+
+				@media tablet
+					margin-top 5px
+					
 			@media tablet
 				margin-top 0px
+
 
 	&__card-wrap
 		max-width 350px
@@ -61,10 +69,10 @@
 		display flex
 
 	&__icon-like
-		display none
+		visibility hidden
 	
 	&__icon-comm
-		display none
+		visibility hidden
 
 	&__info
 		color #bbbbbb
@@ -75,7 +83,6 @@
 	&__wrap
 		text-align center
 		font-weight 400
-		margin-top 18px
 
 	&__img
 		max-width 236px
@@ -90,7 +97,7 @@
 	&__name
 		font-size 18px
 		color #777777
-		margin-top 23px
+		margin-top 5px
 
 	&__price
 		font-size 25px
@@ -114,16 +121,13 @@
 		box-shadow 0 0 10px rgba(0,0,0,0.5)
 
 		& .trend__icon-like
-			display block
+			visibility visible
 
 		& .trend__icon-comm
-			display block
+			visibility visible
 
 		& .trend__info
 			display block
-
-		& .trend__wrap
-			margin-top 0
 
 		& .trend__name
 			color #000
