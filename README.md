@@ -1,9 +1,9 @@
 # Shop
 
 ### GitHub Pages
-```bash
+
 https://dennielcat666.github.io/Shop/dist/index.html
-```
+
 
 ## Блок c баннером
 
