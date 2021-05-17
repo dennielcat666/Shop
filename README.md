@@ -18,7 +18,13 @@ https://dennielcat666.github.io/Shop/dist/index.html
 
 Есть.
 
+## Стек
 
+1. Gulp
+2. PUG
+3. Stylus
+4. jQuery
+5. Babel
 
 ### Зависимости
 ```bash
